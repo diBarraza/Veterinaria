@@ -25,6 +25,45 @@
 // https://doc.zeroc.com/ice/3.7/language-mappings/java-mapping/client-side-slice-to-java-mapping/customizing-the-java-mapping
 ["java:package:cl.ucn.disc.pdis.fivet.zeroice"]
 module model {
+    class Persona{
+        string direccion;
+        string rut;
+        string nombre;
+        long id;
+        long telefonoFijo;
+        long telefonoMovil;
+    }
+    class Ficha{
+        int id;
+        string nombre;
+        string especie;
+        string fecha;
+        string raza;
+        string sexo;
+        string color;
+        string tipo;
+    }
+    class Duenio{
+        string nombre;
+        string direccion;
+        string telefonoFijo;
+        string telefonoMovil;
+        string email;
+        string rut;
+    }
+    class Control{
+        string fecha;
+        string proximoControl;
+        int temperatura;
+        int peso;
+        int altura;
+        string diagnostico;
+        string veterinario;
+    }
+    class Examen{
+        string nombre;
+        string fecha;
+    }
 
     /**
      * The base system.
@@ -37,5 +76,7 @@ module model {
         long getDelay(long clientTime);
 
      }
+
+
 
 }
